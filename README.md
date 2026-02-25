@@ -2,6 +2,8 @@
 
 Scoreboard application for Württembergische Landesbühne Esslingen. OpenFrameworks project (originally Windows/Visual Studio, macOS support in progress).
 
+**Branches:** `master` = original code archive · `reconstruction` = macOS build work
+
 ## Requirements
 
 - **openFrameworks 0.9.8** for macOS: [of_v0.9.8_osx_release](https://openframeworks.cc/versions/v0.9.8/of_v0.9.8_osx_release.zip)
