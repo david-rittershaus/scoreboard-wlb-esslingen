@@ -1,24 +1,24 @@
-# Scoreboard WLB Esslingen
+# Custom Scoreboard WLB Esslingen
 
-Scoreboard application for Württembergische Landesbühne Esslingen. OpenFrameworks project (originally Windows/Visual Studio, macOS support in progress).
+Legacy project developed in 2017.
+
+Custom scoreboard application for a theatre production of Württembergische Landesbühne Esslingen in 2017. OpenFrameworks project (originally Windows/Visual Studio, macOS branch for reconstruction).
 
 **Branches:** `master` = original code archive · `reconstruction` = macOS build work
+
+![Scoreboard screenshot](doc/images/scoreboard-screenshot.png)
 
 ## Requirements
 
 - **openFrameworks 0.9.8** for macOS: [of_v0.9.8_osx_release](https://openframeworks.cc/versions/v0.9.8/of_v0.9.8_osx_release.zip)
-- Addons (included in OF 0.9.8): ofxGui, ofxParamEdit, ofxPointilize, ofxSegmentDisplay
+- Addons: ofxParamEdit, ofxPointilize, ofxSegmentDisplay
 
 ## Setup (macOS)
 
 1. Download and extract OF 0.9.8 for macOS.
-2. Place the extracted folder (`of_v0.9.8_osx_release`) next to this repo and rename to `openFrameworks`, or create a symlink:
-   ```bash
-   cd .. && ln -s of_v0.9.8_osx_release openFrameworks
-   ```
-3. Build:
-   - **Make:** `make` (from project root)
-   - **Xcode:** Use projectGenerator to create an Xcode project, or open an existing `.xcodeproj` if present.
+2. Place the extracted folder (`of_v0.9.8_osx_release`) next to this repo and rename to `openFrameworks`
+3. Place addons in openFrameworks addon folder
+4. Build: **Make:** `make` (from project root) & `run make`
 
 ## Original (Windows)
 

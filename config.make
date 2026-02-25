@@ -11,6 +11,14 @@
 OF_ROOT = ../openFrameworks
 
 ################################################################################
+# macOS SDK (für neuere Xcode/Command Line Tools)
+#   OF 0.9.8 findet alte SDK-Pfade (10.7–10.10) nicht. xcrun nutzt das aktuelle SDK.
+#   Neuere CLT legen C++-Header nur im SDK ab; expliziter Include-Pfad nötig.
+################################################################################
+MAC_OS_SDK_ROOT := $(shell xcrun --show-sdk-path)
+export MAC_OS_SDK_ROOT
+
+################################################################################
 # PROJECT ROOT
 #   The location of the project - a starting place for searching for files
 #       (default) PROJECT_ROOT = . (this directory)
@@ -130,6 +138,13 @@ OF_ROOT = ../openFrameworks
 ################################################################################
 # PROJECT_OPTIMIZATION_CFLAGS_RELEASE = 
 # PROJECT_OPTIMIZATION_CFLAGS_DEBUG = 
+
+################################################################################
+# Projekt-Daten in .app-Bundle kopieren (macOS)
+# OF sucht data/ relativ zu .app (exe ../../../data). Ohne Kopie fehlen
+# verdana.ttf, settings.xml etc.
+################################################################################
+PROJECT_AFTER = cp -r $(PROJECT_ROOT)/data $(PROJECT_ROOT)/bin/$(BIN_NAME).app/
 
 ################################################################################
 # PROJECT COMPILERS

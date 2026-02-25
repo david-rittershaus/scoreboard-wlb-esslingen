@@ -19,8 +19,12 @@ void ofApp::setup() {
 
 	ofSetFrameRate(60);
 
-	fbo.allocate(1366, 748);
-	pointilize.setup(1366, 748);
+	// 16:9 Auflösung für Scoreboard-Render (ursprünglich 1366x748)
+	const int fboW = 1920;
+	const int fboH = 1080;
+	float scale = (float)fboH / 748.0f;
+	fbo.allocate(fboW, fboH);
+	pointilize.setup(fboW, fboH);
 
 
 	sucessTimer1 = ofGetElapsedTimeMillis();
@@ -35,24 +39,22 @@ void ofApp::setup() {
 
 	ofTrueTypeFont::setGlobalDpi(72);
 
-	titles.load("verdana.ttf", 170, true, true);
-	titles.setLineHeight(34.0f);
+	titles.load("verdana.ttf", (int)(170 * scale), true, true);
+	titles.setLineHeight(34.0f * scale);
 	titles.setLetterSpacing(1.035);
 
 
 	ofxSegmentDisplay::Unit::Style& style = display_.getUnitStyleRef();
 
-	
-
-	style.width = 115;
-	style.height = 320;
-	style.padding = ofVec2f(14.2857, 57.1429);
+	style.width = 115 * scale;
+	style.height = 320 * scale;
+	style.padding = ofVec2f(14.2857f * scale, 57.1429f * scale);
 	style.segment_margin = 0;
-	style.segment_width = 13.9;
+	style.segment_width = 13.9f * scale;
 	
 	(int&)align_ = 0;
 	(int&)style.type = 0;
-	unit_interval_ = 160;
+	unit_interval_ = 160 * scale;
 	all_char = true;
 	number_ = 49.5;
 	color_ = ofColor(255, 0, 0);
@@ -68,6 +70,12 @@ void ofApp::setup() {
 //--------------------------------------------------------------
 
 void ofApp::setupGui() {
+
+	// Control-UI Elemente vergrößern (Standard: 200×18 ist winzig)
+	ofxGuiSetDefaultWidth(320);
+	ofxGuiSetDefaultHeight(28);
+	ofxGuiSetTextPadding(8);
+	ofxGuiSetFont("verdana.ttf", 16, true, true);
 
 	parameters.setName("Scoreboard Steuerung");
 	parameters.add(fullscr.set("Vollbild", false));
@@ -180,7 +188,7 @@ void ofApp::update() {
 	}
 	else {
 		ofShowCursor();
-		ofSetWindowShape(600, 600);
+		ofSetWindowShape(1536, 864);
 		ofSetFullscreen(false);
 
 	}
@@ -192,23 +200,24 @@ void ofApp::update() {
 void ofApp::draw() {
 	ofBackground(0);
 
-	float line_height = display_.getUnitStyleRef().height;
 	float line_width = display_.getUnitStyleRef().width;
 	float line_padding = display_.getUnitStyleRef().padding.x;
 
 	fbo.begin();
 
-
 	ofClear(0);
 
+	// FBO-Größe verwenden (nicht Fenstergröße) für korrektes Layout
+	float w = fbo.getWidth();
+	float h = fbo.getHeight();
 	ofPushMatrix();
-	ofTranslate(ofGetWidth() / 2 - ((line_width - line_padding) * 4), -16);
+	ofTranslate(w / 2 - ((line_width - line_padding) * 4), -16);
 	display_.draw((std + "-" + min), color_, blank_color_);
 	ofPopMatrix();
 	ofPushMatrix();
-	ofTranslate(ofGetWidth() / 4 - ((line_width - line_padding)*1.5),  ofGetHeight() /2 + 33);
+	ofTranslate(w / 4 - ((line_width - line_padding)*1.5), h / 2 + 33);
 	display_.draw(ofToString(home, 2, 0), color_, blank_color_);
-	ofTranslate(ofGetWidth() / 2, 0);
+	ofTranslate(w / 2, 0);
 	display_.draw(ofToString(guest, 2, 0), color_, blank_color_);
 	ofPopMatrix();
 
