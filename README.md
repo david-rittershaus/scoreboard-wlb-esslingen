@@ -2,9 +2,7 @@
 
 Legacy project developed in 2017.
 
-Custom scoreboard application for a theatre production of Württembergische Landesbühne Esslingen in 2017. OpenFrameworks project (originally Windows/Visual Studio, macOS branch for reconstruction).
-
-**Branches:** `master` = original code archive · `reconstruction` = macOS build work
+Custom scoreboard application for a theatre production of Württembergische Landesbühne Esslingen in 2017. OpenFrameworks project (originally Windows/Visual Studio, ported to macOS (2025)).
 
 ![Scoreboard screenshot](doc/images/scoreboard-screenshot.png)
 
