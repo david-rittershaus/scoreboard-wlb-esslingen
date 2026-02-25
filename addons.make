@@ -1,0 +1,4 @@
+ofxGui
+ofxParamEdit
+ofxPointilize
+ofxSegmentDisplay

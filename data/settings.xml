@@ -1,0 +1,11 @@
+<parameters>
+	<Vollbild>1</Vollbild>
+	<Heim>0</Heim>
+	<Gast>0</Gast>
+<group>
+		<renderType>1</renderType>
+		<dynamic_Size>1</dynamic_Size>
+		<border_size>0.09</border_size>
+		<radius>0.865</radius>
+	</group>
+</parameters>

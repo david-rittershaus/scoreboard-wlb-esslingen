@@ -1,0 +1,11 @@
+<setting>
+	<refresh>0</refresh>
+	<interval>160</interval>
+	<pos>0, 0</pos>
+	<color>255, 0, 0, 255</color>
+	<blank_color>32, 29, 22, 255</blank_color>
+	<number>49.5</number>
+	<style>0</style>
+<setting/>
+<all_char>1</all_char>
+</setting>

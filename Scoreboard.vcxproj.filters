@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<ClCompile Include="src\ofApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\main.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\main.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\ofApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxGui\src\ofxBaseGui.cpp">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxGui\src\ofxButton.cpp">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxGui\src\ofxGuiGroup.cpp">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxGui\src\ofxLabel.cpp">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxGui\src\ofxPanel.cpp">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxGui\src\ofxSlider.cpp">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxGui\src\ofxSliderGroup.cpp">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxGui\src\ofxToggle.cpp">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxParamEdit\src\ofxParamColorSlider.cpp">
+			<Filter>addons\ofxParamEdit\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxParamEdit\src\ofxParamEdit.cpp">
+			<Filter>addons\ofxParamEdit\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxParamEdit\src\ofxParamPanel.cpp">
+			<Filter>addons\ofxParamEdit\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxParamEdit\src\ofxParamSlider.cpp">
+			<Filter>addons\ofxParamEdit\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxParamEdit\src\ofxParamToggle.cpp">
+			<Filter>addons\ofxParamEdit\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxParamEdit\src\ofxParamVecSlider.cpp">
+			<Filter>addons\ofxParamEdit\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxPointilize\src\ofxPointilize.cpp">
+			<Filter>addons\ofxPointilize\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxSegmentDisplay\src\ofxSegmentDisplay.cpp">
+			<Filter>addons\ofxSegmentDisplay\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxSegmentDisplay\src\ofxSegmentDisplay14SegImpl.cpp">
+			<Filter>addons\ofxSegmentDisplay\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxSegmentDisplay\src\ofxSegmentDisplay16SegImpl.cpp">
+			<Filter>addons\ofxSegmentDisplay\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\of_v0.9.8_vs_release\addons\ofxSegmentDisplay\src\ofxSegmentDisplay7SegImpl.cpp">
+			<Filter>addons\ofxSegmentDisplay\src</Filter>
+		</ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="src">
+			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons">
+			<UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxGui">
+			<UniqueIdentifier>{4F2A59AF-5F4E-704B-D067-EC13}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxGui\src">
+			<UniqueIdentifier>{645E9533-4DCD-6179-1CDF-CB65}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxParamEdit">
+			<UniqueIdentifier>{A406CB15-038D-2907-28C1-8DB7}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxParamEdit\src">
+			<UniqueIdentifier>{E4B8082B-352D-0D65-3AED-58AD}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxPointilize">
+			<UniqueIdentifier>{1499E698-20A7-FA22-5667-D7A9}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxPointilize\src">
+			<UniqueIdentifier>{194A326A-2C04-753D-A49B-12BF}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxSegmentDisplay">
+			<UniqueIdentifier>{C5253FBA-71E0-5C89-220D-1E09}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxSegmentDisplay\src">
+			<UniqueIdentifier>{336CA3E5-5D99-4F9F-2F28-397F}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="src\ofApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="src\ofApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxGui\src\ofxBaseGui.h">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxGui\src\ofxButton.h">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxGui\src\ofxGui.h">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxGui\src\ofxGuiGroup.h">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxGui\src\ofxLabel.h">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxGui\src\ofxPanel.h">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxGui\src\ofxSlider.h">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxGui\src\ofxSliderGroup.h">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxGui\src\ofxToggle.h">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxParamEdit\src\ofxParamColorSlider.h">
+			<Filter>addons\ofxParamEdit\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxParamEdit\src\ofxParamEdit.h">
+			<Filter>addons\ofxParamEdit\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxParamEdit\src\ofxParamPanel.h">
+			<Filter>addons\ofxParamEdit\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxParamEdit\src\ofxParamSlider.h">
+			<Filter>addons\ofxParamEdit\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxParamEdit\src\ofxParamToggle.h">
+			<Filter>addons\ofxParamEdit\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxParamEdit\src\ofxParamVecSlider.h">
+			<Filter>addons\ofxParamEdit\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxPointilize\src\ofxPointilize.h">
+			<Filter>addons\ofxPointilize\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\of_v0.9.8_vs_release\addons\ofxSegmentDisplay\src\ofxSegmentDisplay.h">
+			<Filter>addons\ofxSegmentDisplay\src</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="icon.rc" />
+	</ItemGroup>
+</Project>
